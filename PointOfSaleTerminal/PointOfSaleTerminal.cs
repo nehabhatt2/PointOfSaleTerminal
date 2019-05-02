@@ -55,10 +55,11 @@ namespace PointOfSale
 		public double CalculateTotal()
 		{
 			double price = 0;
-			foreach (var cartItem in cartmanager.GetCart())
+			var cartItems = cartmanager.GetCart();
+			foreach (var item in cartItems)
 			{
-				var prod = productCatalogManager.Get(cartItem.Key);
-				price += prod.BestPriceForGivenVolumn(cartItem.Value, 0);
+				var prod = productCatalogManager.Get(item.Key);
+				price += prod.BestPriceForGivenVolumn(item.Value, 0);
 			}
 			return price;
 		}
