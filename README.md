@@ -30,3 +30,7 @@ Here are the minimal inputs you should use for your test cases. These test cases
 Scan these items in this order: ABCDABA; Verify the total price is $13.25.
 Scan these items in this order: CCCCCCC; Verify the total price is $6.00.
 Scan these items in this order: ABCD; Verify the total price is $7.25
+
+Solution 
+Run the cosole application, enter key to scan the product, press 'Enter' to get the price. 
+
